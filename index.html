@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Jumpy</title>
+</head>
+<body>
+
+
+    <header>
+        <img src="./assets/logo_dnc.svg" alt="logo_dnc">
+    </header>
+
+    <div class="main">
+    <section>
+        <div class="jumpy">
+            <img src="./assets/logo_jumpy.svg" alt="logo_jumpy">
+            <h1>Bem vindo ao Jumpy!</h1>
+        </div>
+
+        <form action="">
+            <p>Nome completo: </p>
+            <input class="inputs" id="name" type="text" placeholder="Nome Completo">
+            <p class="obrigatorio" id="campo-nome"> *Campo obrigatório*</p>
+
+            <p>Email: </p>
+            <input class="inputs" type="email" id="email" placeholder="Email@email.com">
+            <p class="obrigatorio" id="campo-email"> *Campo obrigatório*</p>
+
+
+            <p>Telefone: </p>
+            <input class="inputs" id="tel" type="tel" placeholder="(00) 00000-0000">
+
+            <p>CPF:  </p>
+            <input class="inputs" id="cpf" type="number" placeholder="000.000.000-00" >
+
+            <p>Senha: </p>
+            <input class="inputs" id="senha" type="password" placeholder="***********"> <br>
+
+           <button id="botao"  >Cadastrar</button>
+            <p id="campo-obg"> Campos obrigatórios não registrados.</p>
+
+        </form>
+    </section>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
