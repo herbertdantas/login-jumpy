@@ -55,6 +55,3 @@ function limpar(){
     
 }
 
-function sair(){
-    document.getElementById("campo-obg").style.display = "none"
-}
