@@ -5,9 +5,10 @@ button.addEventListener('click', (event) => {
 
     const nome = document.getElementById("name").value
     const email = document.getElementById("email").value
-
+    const tel = document.getElementById("tel").value
+    const cpf = document.getElementById("cpf").value
+    const senha = document.getElementById("senha").value
     
-
     if (nome == ""){
 
         document.getElementById("campo-nome").style.display = "block"
@@ -17,7 +18,6 @@ button.addEventListener('click', (event) => {
         document.getElementById("campo-nome").style.display = "none"
     }
 
-
     if (email == ""){
 
         document.getElementById("campo-email").style.display = "block"
@@ -25,7 +25,32 @@ button.addEventListener('click', (event) => {
         document.getElementById("campo-email").style.display = "none"
     }
 
-    if (nome != "" && email != ""){
+    if (tel == ""){
+
+        document.getElementById("campo-tel").style.display = "block"
+    }else{
+        document.getElementById("campo-tel").style.display = "none"
+    }
+
+    if (cpf == ""){
+
+        document.getElementById("campo-cpf").style.display = "block"
+    }else{
+        document.getElementById("campo-cpf").style.display = "none"
+    }
+
+    if (senha == ""){
+
+        document.getElementById("campo-senha").style.display = "block"
+    }else{
+        document.getElementById("campo-senha").style.display = "none"
+    }
+
+
+
+
+
+    if (nome != "" && email != "" && tel != "" && cpf != "" && senha != "" ){
         document.getElementById("campo-obg").innerHTML = "Sucesso"
         document.getElementById("campo-obg").style.display = "block"
         document.getElementById("campo-obg").style.color = "green"
@@ -37,10 +62,6 @@ button.addEventListener('click', (event) => {
         document.getElementById("campo-obg").style.display = "block"
         document.getElementById("campo-obg").innerHTML = "Campos obrigatórios não registrados"
         document.getElementById("campo-obg").style.color = "#E73550"
-        
-        
-        
-        
     }
     
 
