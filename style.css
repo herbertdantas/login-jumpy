@@ -78,7 +78,7 @@ form p {
 
 
 
-#campo-nome, #campo-email{
+#campo-nome, #campo-email, #campo-tel, #campo-cpf, #campo-senha{
     margin-top: -15px;
     text-align: right;
     color: #E73550;
